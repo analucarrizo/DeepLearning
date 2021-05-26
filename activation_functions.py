@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
 
 
 from module import Module
@@ -184,7 +180,6 @@ class Sigmoid(Module):
 
         :returns: 
         '''
-        #tmp = x.clone()
         self.in_value = x.clone()
         return tmp.apply_(sigmoid)
 

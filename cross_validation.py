@@ -3,6 +3,8 @@ from activation_functions import ReLU, Tanh, LeakyReLU, Sigmoid
 from train import parseModel, createData, train_model, computeAccuracy
 from torch import empty
 
+## function used to cross validate (3 folds)
+        ##input: dictionary containg all lr,batch_sizes,momentums,xavierGain,epochs the user wants to cross validate on
 def crossValidation(dictionary):
     if dictionary.get("model", None) == None:
         print("arguments missing (model)")
